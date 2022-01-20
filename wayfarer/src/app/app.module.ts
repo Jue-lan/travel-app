@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './header/homepage/homepage.component';
-import { PostComponent } from './info-module/post/post.component';
-import { CitiesComponent } from './cities-module/cities/cities.component';
-import { InfoComponent } from './info-module/info/info.component';
+
+
+import { InfoModuleModule } from './info-module/info-module.module';
+import { HeaderModule } from './header/header.module';
+import { CitiesModuleModule } from './cities-module/cities-module.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    PostComponent,
-    CitiesComponent,
-    InfoComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, InfoModuleModule,HeaderModule, CitiesModuleModule ],
   providers: [],
   bootstrap: [AppComponent],
 })
