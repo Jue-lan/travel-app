@@ -32,3 +32,15 @@ a:hover {
   justify-content: left;
   align-items: center;
 }
+
+.nav-container input {
+  border: 1px solid purple;
+
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  width: 300px;
+
+  justify-content: left;
+  align-items: left;
+}
