@@ -7,17 +7,4 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {
-  cities = [
-    {
-      name: 'New York',
-      image: '',
-      posts: [
-        {
-          title: '',
-          content: '',
-        },
-      ],
-    },
-  ];
-}
+export class AppRoutingModule {}

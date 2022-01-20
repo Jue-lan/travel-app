@@ -7,16 +7,22 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { PostComponent } from './post/post.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    PostComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomepageComponent, PostComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  cities = [
+    {
+      name: 'New York',
+      image: '',
+      posts: [
+        {
+          title: '',
+          content: '',
+        },
+      ],
+    },
+  ];
+}
