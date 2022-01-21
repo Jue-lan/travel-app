@@ -2,7 +2,19 @@
   <nav class="nav-container">
     <img src="../assets/images/logo.png" />
     <a href="http://localhost:4200/"> WayFarer </a>
-    <input type="text" placeholder="Enter a post title" />
+    <input
+      type="text"
+      placeholder="Enter a post title"
+      class="search-cities"
+      [(ngModel)]="postTitle"
+      (keyup)="findPostsByTitle(postTitle)"
+    />
+    <input
+      type="submit"
+      value="Search"
+      class="search-cities-button"
+      (click)="findPostsByTitle(postTitle)"
+    />
   </nav>
 </div>
 

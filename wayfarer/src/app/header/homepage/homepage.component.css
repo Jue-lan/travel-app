@@ -33,14 +33,26 @@ a:hover {
   align-items: center;
 }
 
-.nav-container input {
-  border: 1px solid purple;
-
+.search-cities {
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
-  width: 300px;
+  width: 150px;
 
   justify-content: left;
   align-items: left;
+}
+
+.search-cities-button {
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  padding: 0 20px;
+  width: 150px;
 }
