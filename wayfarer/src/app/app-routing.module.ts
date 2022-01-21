@@ -7,11 +7,11 @@ import { CitiesComponent } from './cities-module/cities/cities.component';
 
 const routes: Routes = [
   {
-    path: 'cities/:id',
+    path: 'cities/',
     component: CitiesComponent,
   },
   {
-    path: 'info/:id',
+    path: 'cities/:id',
     component: InfoComponent,
   },
     {
