@@ -9,14 +9,13 @@ export class HomepageService {
   constructor() {}
 
   findPosts(value: any) {
-    console.log(value);
+    // console.log(value);
+
     this.cityList.map((city) => {
       city.posts.map((posts) => {
         if (posts.title.includes(value)) {
           console.log(posts);
-          console.log(value);
-        } else {
-          console.log('Nothing found');
+          // console.log(value);
         }
       });
     });

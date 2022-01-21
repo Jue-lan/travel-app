@@ -24,6 +24,8 @@ export class HomepageComponent implements OnInit {
   }
 
   findPostsByTitle(value: string) {
-    this.searchSubject.next(value);
+    if (value.length > 0) {
+      this.searchSubject.next(value);
+    }
   }
 }
