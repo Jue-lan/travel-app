@@ -1,19 +1,23 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { cities } from 'src/app/data';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HomepageService {
-  cityList = cities;
-  constructor() {}
+  cityList: any;
+
+  constructor(private http: HttpClient) {}
 
   findPosts(value: any) {
-    this.cityList.map((city) => {
-      city.posts.map((posts) => {
-        if (posts.title.includes(value)) {
-          console.log(posts);
-        }
+    this.http.get('assets/data.json').subscribe((data) => {
+      this.cityList = data;
+      this.cityList.map((city: any) => {
+        city.posts.map((posts: any) => {
+          if (posts.title.includes(value)) {
+            console.log(posts);
+          }
+        });
       });
     });
   }

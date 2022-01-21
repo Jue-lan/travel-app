@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cities } from 'src/app/data';
+
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
@@ -10,7 +10,6 @@ import { HomepageService } from './homepage.service';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  cities = cities;
   postTitle: string = '';
   searchSubject = new Subject();
   constructor(private searchService: HomepageService) {}
