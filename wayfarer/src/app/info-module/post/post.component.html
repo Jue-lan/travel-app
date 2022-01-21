@@ -3,7 +3,10 @@
 <section *ngIf="cities">
   <ul>
     <li *ngFor="let city of cities">
-      {{ city.name }}
+      <img src="{{ city.image }}" height="50px" width="50px" />
+      <a href="http://google.com">
+        {{ city.name }}
+      </a>
     </li>
   </ul>
 </section>
