@@ -1,8 +1,8 @@
 <section *ngIf="cityData">
   <ul>
-    <li *ngFor="let city of cityData.cities">
+    <li *ngFor="let city of cityData.cities; let i = index">
       <img src="{{ city.image }}" height="50px" width="50px" />
-      <a>
+      <a routerLink="/cities/{{ i }}">
         {{ city.name }}
       </a>
     </li>

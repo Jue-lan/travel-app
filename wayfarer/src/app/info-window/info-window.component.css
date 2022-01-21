@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+}
+
+.cities-container {
+  border: 1px solid red;
+  width: 400px;
+}
+
+.info-conatiner {
+  width: 300px;
+}
