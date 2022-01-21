@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { cities } from 'src/app/data';
 
 @Component({
   selector: 'app-cities',
   templateUrl: './cities.component.html',
-  styleUrls: ['./cities.component.css']
+  styleUrls: ['./cities.component.css'],
 })
 export class CitiesComponent implements OnInit {
+  cities = cities;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
