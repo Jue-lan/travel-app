@@ -9,6 +9,7 @@ export class PostComponent implements OnInit {
   cities = [
     {
       name: 'New York',
+      country: 'United States',
       image: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg',
       posts: [
         {
@@ -19,6 +20,7 @@ export class PostComponent implements OnInit {
     },
     {
       name: 'London',
+      country: 'United Kingdom',
       image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg',
       posts: [
         {
@@ -37,6 +39,7 @@ export class PostComponent implements OnInit {
     },
     {
       name: 'Sidney',
+      country: 'Australia',
       image: 'https://www.cunard.com/content/dam/cunard/inventory-assets/ports/SYD/yqy.jpg.1538745208398.image.750.563.low.jpg',
       posts: [
         {
@@ -51,6 +54,7 @@ export class PostComponent implements OnInit {
     },
     {
       name: 'San Francisco',
+      country: 'United States',
       image: 'https://a.cdn-hotels.com/gdcs/production92/d1580/9a28fc70-9bea-11e8-a1b5-0242ac110053.jpg',
       posts: [
         {
@@ -61,6 +65,7 @@ export class PostComponent implements OnInit {
     },
     {
       name: 'Seattle',
+      country: 'United States',
       image: 'https://a.cdn-hotels.com/gdcs/production105/d405/a6a349a5-4c01-4262-ae54-3d7bbfb24b10.jpg?impolicy=fcrop&w=800&h=533&q=medium',
       posts: [
         {
