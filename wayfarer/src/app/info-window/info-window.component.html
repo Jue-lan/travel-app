@@ -1,1 +1,18 @@
 <p>info-window works!</p>
+<div class="container">
+  <app-cities class="cities-container"></app-cities>
+
+  <div class="info-container">
+    <div>
+      {{ cityObject.name }}
+      {{ cityObject.country }}
+    </div>
+
+    <ul *ngFor="let posts of cityObject.posts">
+      <li>
+        {{ posts.title }}
+        {{ posts.content }}
+      </li>
+    </ul>
+  </div>
+</div>
