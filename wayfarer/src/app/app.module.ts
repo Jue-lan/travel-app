@@ -8,15 +8,18 @@ import { HomepageComponent } from './header/homepage/homepage.component';
 
 import { HeaderModule } from './header/header.module';
 import { CitiesModuleModule } from './cities-module/cities-module.module';
+import { InfoWindowComponent } from './info-window/info-window.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent],
+  declarations: [AppComponent, HomepageComponent, InfoWindowComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
     CitiesModuleModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
