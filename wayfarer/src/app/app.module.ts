@@ -11,13 +11,7 @@ import { CitiesModuleModule } from './cities-module/cities-module.module';
 
 @NgModule({
   declarations: [AppComponent, HomepageComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    InfoModuleModule,
-    HeaderModule,
-    CitiesModuleModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, InfoModuleModule, HeaderModule, CitiesModuleModule ],
   providers: [],
   bootstrap: [AppComponent],
 })
