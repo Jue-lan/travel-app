@@ -6,7 +6,7 @@ import { CitiesComponent } from './cities-module/cities/cities.component';
 
 const routes: Routes = [
   {
-    path: 'cities',
+    path: 'cities/:id',
     component: CitiesComponent,
   },
 ];

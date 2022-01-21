@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { cities } from 'src/app/data';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-cities',
   templateUrl: './cities.component.html',
   styleUrls: ['./cities.component.css'],
 })
 export class CitiesComponent implements OnInit {
-  cities = cities;
+  cityData: any;
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.http.get('assets/data.json').subscribe((data) => {
+      this.cityData = data;
+    });
+  }
 }
