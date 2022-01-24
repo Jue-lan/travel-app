@@ -1,3 +1,33 @@
+
+.cities-section {
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+}
+
+ul {
+    border-right: 3px solid #e7e7e7;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 500px;
+  margin: 0px;
+  color: rgb(0, 3, 161);
+  list-style: none;
+}
+
+img {
+    width: 125px;
+  height: 75px;
+}
+
+a {
+    color:#4d4d4e;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
 ul {
   list-style-type: none;
 }
+
