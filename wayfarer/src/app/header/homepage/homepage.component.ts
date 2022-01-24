@@ -12,6 +12,7 @@ import { HomepageService } from './homepage.service';
 export class HomepageComponent implements OnInit {
   postTitle: string = '';
   searchSubject = new Subject();
+  toggleSearchField: boolean = true;
   constructor(private searchService: HomepageService) {}
 
   ngOnInit(): void {
@@ -26,5 +27,9 @@ export class HomepageComponent implements OnInit {
     if (value.length > 0) {
       this.searchSubject.next(value);
     }
+  }
+
+  displaySearch() {
+    this.toggleSearchField = !this.toggleSearchField;
   }
 }
