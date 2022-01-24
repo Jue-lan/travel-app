@@ -7,21 +7,24 @@
       "posts": [
         {
           "title": "New York Midtown Hotels",
+          "author": "Betty White",
           "content": "Hi There, I'm looking for some sound guidance on places to stay in Midtown. Wanting Value for money and a big'ish room with a view of the city. We are looking to go Sept 2022 and have looked at lots of different hotels all much of a muchness. I've favored the New Yorker at the min but just thought i would ask the Trip Advisor community. What ever i go for i obviously know about the stupid resort fees !! on top. Any Help Guidance or Advice is welcome !! Many Thanks all !! Dave"
         }
       ]
     },
     {
       "name": "London",
-      "country": "London",
+      "country": "United Kingdom",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg",
       "posts": [
         {
           "title": "Traveling by train in the UK",
+          "author": "Tom Hardy",
           "content": "My family and I will be flying into Edinburgh in June. We want to travel to Northumberland to visit Alnwick Castle then travel down to Oxford then London. Wondering best way to get to Northumberland? Should we take a train to Northumberland and stay a night there before continuing on OR stay one more night in Edinburgh and just take a day tour to Alnwick Castle? Any advice would be much appreciated"
         },
         {
           "title": "Long term car rental in United Kingdom?",
+          "author": "Benedict Cumberbatch",
           "content": "I will be volunteering in Hampshire mid June through mid September this year. Anyone had experience with renting a car for a couple months? I'll be volunteering in the countryside and have been advised to have a car. Thanks!!"
         }
       ]
@@ -33,10 +36,12 @@
       "posts": [
         {
           "title": "Sydney domestic airport",
+          "author": "Nicole Kidman",
           "content": "Are the cafes open in T2? We are flying out Monday and trying to sort out if we need to eat before we get there or if we can have breakfast at the terminal."
         },
         {
           "title": "London to Townsville via Sydney",
+          "author": "Margot Robbie",
           "content": "Australians returning Christmas Day. Arriving in Sydney from London, just a refuel in Darwin. Destination is Townsville where we have a rental house waiting. Flight arrives in Sydney at night but first flight to Townsville is not until 7am. 2 adults fully vaccinated, 12yr old with 1 vaccination (all you can get for them in UK) and a 9yr old. What do we. Anyone know?"
         }
       ]
@@ -48,6 +53,7 @@
       "posts": [
         {
           "title": "Club Quarters Hotel Financial District",
+          "author": "Viola Davis",
           "content": "Looking at this place for a 3 night visit to see SF. Anybody have thoughts or experience with this place? TIA"
         }
       ]
@@ -59,6 +65,7 @@
       "posts": [
         {
           "title": "Seattle first time 7 night help",
+          "author": "Zoe Saldana",
           "Content": "Flying into Seattle and want to spend a few nights. there. What else do you suggest we visit? We will have a rental car. Leavinworth? San Juan islands? Any info is helpful. We aren't big into hiking, but would if its easy. ha! "
         }
       ]
