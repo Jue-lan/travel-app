@@ -33,3 +33,11 @@
     src="https://cdn.stocksnap.io/img-thumbs/960w/ocean-water_DLHXWO09HY.jpg"
   />
 </div>
+<section *ngIf="cityList">
+  <ul>
+    <li *ngFor="let post of cityList.posts">
+      {{ post.title }}
+      {{ post.content }}
+    </li>
+  </ul>
+</section>
