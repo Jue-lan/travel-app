@@ -2,12 +2,13 @@
 .cities-section {
   background-color: rgb(255, 255, 255);
   height: 500px;
+  margin-top: 50px;
 }
 
 ul {
     border-right: 3px solid #e7e7e7;
   background-color: rgb(255, 255, 255);
-  width: 350px;
+  width: 300px;
   height: 500px;
   margin: 0px;
   color: rgb(0, 3, 161);
@@ -17,6 +18,7 @@ ul {
 img {
     width: 125px;
   height: 75px;
+  border-radius: 3px;
 }
 
 a {

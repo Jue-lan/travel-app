@@ -2,8 +2,8 @@
   <app-cities class="cities-container"></app-cities>
 
   <div class="info-container">
-    <div>
-      {{ cityObject.name }}
+    <div class="name-country-div">
+      {{ cityObject.name }}, 
       {{ cityObject.country }}
     </div>
 
@@ -15,10 +15,10 @@
       </li>
       <br />
       <li>
-        Descriptions:
+        Description:
         {{ posts.content }}
       </li>
     </ul>
-    <img src="{{ cityObject.image }}" maxWidth="200px" maxWidth="300px" />
+    <img src="{{ cityObject.image }}" maxWidth="351px" />
   </div>
 </div>
