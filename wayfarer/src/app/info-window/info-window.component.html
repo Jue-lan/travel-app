@@ -9,9 +9,16 @@
 
     <ul *ngFor="let posts of cityObject.posts">
       <li>
-        {{ posts.title }}
+        <a routerLink="/cities/:id/posts">
+          {{ posts.title }}
+        </a>
+      </li>
+      <br />
+      <li>
+        Descriptions:
         {{ posts.content }}
       </li>
     </ul>
+    <img src="{{ cityObject.image }}" maxWidth="200px" maxWidth="300px" />
   </div>
 </div>

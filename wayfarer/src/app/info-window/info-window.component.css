@@ -1,5 +1,6 @@
 .container {
   display: flex;
+
   /* border: 2px solid blue;
   background-color: blue; */
 }
@@ -7,9 +8,23 @@
 .cities-container {
   /* border: 2px solid red; */
   width: 300px;
+  align-items: left;
 }
 
-.info-conatiner {
+.info-container {
   width: 500px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   /* border: 2px solid orange; */
+}
+
+.info-container img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.info-container ul {
+  list-style: none;
 }
