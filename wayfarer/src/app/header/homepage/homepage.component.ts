@@ -33,8 +33,7 @@ export class HomepageComponent implements OnInit {
   displaySearch() {
     this.toggleSearchField = !this.toggleSearchField;
   }
-
-  displayImage(){
-    this.toggleImageField = !this.toggleSearchField;
+  displayImage() {
+    this.toggleImageField = !this.toggleImageField;
   }
 }

@@ -10,9 +10,10 @@ import { HeaderModule } from './header/header.module';
 import { CitiesModuleModule } from './cities-module/cities-module.module';
 import { InfoWindowComponent } from './info-window/info-window.component';
 import { HttpClientModule } from '@angular/common/http';
+import { InfoPageComponent } from './info-page/info-page.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, InfoWindowComponent],
+  declarations: [AppComponent, HomepageComponent, InfoWindowComponent, InfoPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

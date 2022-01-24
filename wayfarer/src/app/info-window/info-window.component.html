@@ -1,18 +1,24 @@
-<p>info-window works!</p>
 <div class="container">
   <app-cities class="cities-container"></app-cities>
 
   <div class="info-container">
-    <div>
-      {{ cityObject.name }}
+    <div class="name-country-div">
+      {{ cityObject.name }}, 
       {{ cityObject.country }}
     </div>
 
     <ul *ngFor="let posts of cityObject.posts">
       <li>
-        {{ posts.title }}
+        <a routerLink="/cities/:id/posts">
+          {{ posts.title }}
+        </a>
+      </li>
+      <br />
+      <li>
+        Description:
         {{ posts.content }}
       </li>
     </ul>
+    <img src="{{ cityObject.image }}" maxWidth="351px" />
   </div>
 </div>
