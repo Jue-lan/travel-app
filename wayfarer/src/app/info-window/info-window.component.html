@@ -3,13 +3,13 @@
 
   <div class="info-container">
     <div class="name-country-div">
-      {{ cityObject.name }}, 
+      {{ cityObject.name }},
       {{ cityObject.country }}
     </div>
 
-    <ul *ngFor="let posts of cityObject.posts">
+    <ul *ngFor="let posts of cityObject.posts; let i = index">
       <li>
-        <a routerLink="/cities/:id/posts">
+        <a routerLink="/cities/{{ i }}/post">
           {{ posts.title }}
         </a>
       </li>
@@ -22,3 +22,8 @@
     <img src="{{ cityObject.image }}" maxWidth="351px" />
   </div>
 </div>
+
+<app-info-page
+  posts="{{ cityObject.posts }}"
+  message="parentMessage"
+></app-info-page>

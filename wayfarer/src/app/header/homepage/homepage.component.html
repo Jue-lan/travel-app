@@ -23,6 +23,7 @@
     class="routerlink-button"
     routerLink="/cities"
     (click)="displayImage()"
+    [hidden]="toggleImageField"
   >
     Show City List
   </button>
@@ -33,11 +34,15 @@
     src="https://cdn.stocksnap.io/img-thumbs/960w/ocean-water_DLHXWO09HY.jpg"
   />
 </div>
-<section *ngIf="cityList">
+
+<!-- <h3>Something before {{ titlePost }}something After {{ postContent }}</h3> -->
+<div [hidden]="toggleSearchField">
   <ul>
-    <li *ngFor="let post of cityList.posts">
-      {{ post.title }}
-      {{ post.content }}
+    <li *ngFor="let post of postList">
+      <p>
+        <strong>{{ post.title }}</strong>
+      </p>
+      <p>{{ post.content }}</p>
     </li>
   </ul>
-</section>
+</div>

@@ -11,6 +11,7 @@ export class InfoWindowComponent implements OnInit {
   cityData: any;
 
   cityObject: any;
+  parentMessage = 'Hello from parent';
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
   ngOnInit(): void {

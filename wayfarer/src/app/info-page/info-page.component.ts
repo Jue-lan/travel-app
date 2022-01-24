@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-page.component.css'],
 })
 export class InfoPageComponent implements OnInit {
-  @Input('post') post: any;
+  @Input() posts: any;
+  @Input() message: any;
+
   constructor() {}
 
   ngOnInit(): void {}

@@ -12,6 +12,8 @@ import { HomepageService } from './homepage.service';
 export class HomepageComponent implements OnInit {
   postTitle: string = '';
   cityList: any;
+
+  postList: any = [];
   searchSubject = new Subject();
   toggleSearchField: boolean = true;
   toggleImageField: boolean = false;
@@ -23,12 +25,17 @@ export class HomepageComponent implements OnInit {
       .subscribe((postTitle) => {
         this.searchService.findPosts(postTitle).subscribe((response) => {
           this.cityList = response;
-          this.cityList = this.cityList.cities;
-          console.log(this.cityList);
-          return this.cityList.map((city: any) => {
+
+          return this.cityList.cities.map((city: any) => {
             city.posts.map((posts: any) => {
+              console.log(posts);
+              // posts.reverse();
               if (posts.title.includes(postTitle)) {
                 console.log(posts);
+                this.postList.push(posts);
+
+                this.postList.reverse();
+                console.log(this.postList);
               }
             });
           });

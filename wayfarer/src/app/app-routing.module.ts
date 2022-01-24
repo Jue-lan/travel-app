@@ -15,11 +15,17 @@ const routes: Routes = [
     //  /cities/:id
     path: 'cities/:id',
     component: InfoWindowComponent,
+    children: [
+      {
+        path: 'posts',
+        component: InfoPageComponent,
+      },
+    ],
   },
-  {
-    path: 'cities/:id/posts',
-    component: InfoPageComponent,
-  },
+  // {
+  //   path: 'cities/:id/posts',
+  //   component: InfoPageComponent,
+  // },
 ];
 
 @NgModule({
