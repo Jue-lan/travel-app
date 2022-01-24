@@ -13,6 +13,7 @@ export class HomepageComponent implements OnInit {
   postTitle: string = '';
   searchSubject = new Subject();
   toggleSearchField: boolean = true;
+  toggleImageField: boolean = false;
   constructor(private searchService: HomepageService) {}
 
   ngOnInit(): void {
@@ -31,5 +32,8 @@ export class HomepageComponent implements OnInit {
 
   displaySearch() {
     this.toggleSearchField = !this.toggleSearchField;
+  }
+  displayImage() {
+    this.toggleImageField = !this.toggleImageField;
   }
 }
