@@ -1,12 +1,15 @@
 .container {
   display: flex;
+  /* border: 2px solid blue;
+  background-color: blue; */
 }
 
 .cities-container {
-  border: 1px solid red;
-  width: 400px;
+  /* border: 2px solid red; */
+  width: 300px;
 }
 
 .info-conatiner {
-  width: 300px;
+  width: 500px;
+  /* border: 2px solid orange; */
 }
