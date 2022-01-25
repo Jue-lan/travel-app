@@ -1,12 +1,12 @@
 .container {
   display: flex;
 
-  border: 2px solid blue; 
+  /* border: 2px solid blue;  */
  
 }
 
 .cities-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 345px;
   margin: 0px;
   align-items: left;
@@ -19,7 +19,7 @@
  
   /* align-items: center; */
   padding-top: 15px;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 
 .info-container img {
@@ -27,7 +27,7 @@
   height: 200px;
   border-radius: 3px;
   margin-top: 10px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin-left: 41%;
   /* align-items: center; */
 }
@@ -36,8 +36,8 @@
   list-style: none;
   font-size: 20px;
   color:#4d4d4e;
-  border:3px solid blue;
-  /* align-items: none; */
+  /* border:3px solid blue;
+  align-items: none; */
 }
 
 a {
