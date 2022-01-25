@@ -1,0 +1,27 @@
+.info-page-div {
+    margin:50px 30px 30px 30px;
+    padding:10px;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-page-div h1 {
+    margin-bottom: 10px;
+    color:#0a8830e3;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.info-page-div h3 {
+    margin-top:5px;
+    padding: 0px;
+    font-size: 25px;
+    color:rgb(2, 4, 117);
+}
+
+.info-page-div p {   
+    font-size: 20px;
+    color:#4d4d4e;
+    padding: 20px;
+}
