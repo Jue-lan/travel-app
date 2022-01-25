@@ -9,10 +9,17 @@
 
     <ul *ngFor="let posts of cityObject.posts; let i = index">
       <li>
-        <a routerLink="/post">
+        <a
+          routerLink="/post"
+          [state]="{ title: posts.title, content: posts.content }"
+        >
           {{ posts.title }}
         </a>
       </li>
+      <br />
+      <div>
+        {{ posts.author }}
+      </div>
       <br />
       <li>
         Description:

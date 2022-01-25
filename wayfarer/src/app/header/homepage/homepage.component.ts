@@ -14,6 +14,7 @@ export class HomepageComponent implements OnInit {
   postTitle: string = '';
   cityList: any;
 
+  weatherData: any;
   cityTitle: string = '';
   postList: any = [];
   searchSubject = new Subject();
