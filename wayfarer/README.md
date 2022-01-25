@@ -1,6 +1,6 @@
 ## Reflection
 
-### How did your group approach the requirements? (mention anything unique or creative your group chose to do)
+### How did your group approach the requirements? 
 
 - Our team took about 30 discussing how we understood the requirements and wireframe to be.
 - We used the screen writing tools to communicate how we would break the page layout into backend components.
