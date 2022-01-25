@@ -105,3 +105,14 @@ height: 500px;
 border-radius: 3px;
 
 }
+
+.search-post-container{
+  color:#4d4d4e;
+  font-size: 20px;
+  width: 75%;
+}
+
+.title-p{
+  color:rgb(2, 4, 117);
+  font-weight: bold;
+}
