@@ -10,7 +10,8 @@
         class="search-cities"
         [(ngModel)]="postTitle"
         (keyup)="findPostsByTitle(postTitle)"
-        required maxlength="200"
+        required
+        maxlength="200"
       />
       <input
         type="submit"
@@ -46,4 +47,8 @@
       <p>{{ post.content }}</p>
     </li>
   </ul>
+  <div>
+    <button (click)="findWeather()">Click For Weather Info</button>
+  </div>
 </div>
+{{ postTitle }}

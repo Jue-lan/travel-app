@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 import { Subject } from 'rxjs';
@@ -13,11 +14,16 @@ export class HomepageComponent implements OnInit {
   postTitle: string = '';
   cityList: any;
 
+  cityTitle: string = '';
   postList: any = [];
   searchSubject = new Subject();
   toggleSearchField: boolean = true;
   toggleImageField: boolean = false;
-  constructor(private searchService: HomepageService) {}
+  toggleWeather: boolean = true;
+  constructor(
+    private searchService: HomepageService,
+    private http: HttpClient
+  ) {}
 
   ngOnInit(): void {
     this.searchSubject
@@ -27,6 +33,8 @@ export class HomepageComponent implements OnInit {
           this.cityList = response;
 
           return this.cityList.cities.map((city: any) => {
+            // console.log(city);
+            this.cityTitle = city.name;
             city.posts.map((posts: any) => {
               console.log(posts);
               // posts.reverse();
@@ -47,6 +55,12 @@ export class HomepageComponent implements OnInit {
     if (value.length > 0) {
       this.searchSubject.next(value);
     }
+  }
+
+  findWeather() {
+    this.http.get(
+      `http://api.openweathermap.org/data/2.5/weather?q=${this.cityTitle},us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=metric`
+    );
   }
 
   displaySearch() {
