@@ -11,7 +11,11 @@
       <li>
         <a
           routerLink="/post"
-          [state]="{ title: posts.title, content: posts.content }"
+          [state]="{
+            title: posts.title,
+            content: posts.content,
+            author: posts.author
+          }"
         >
           {{ posts.title }}
         </a>
@@ -21,16 +25,11 @@
         {{ posts.author }}
       </div>
       <br />
-      <li>
+      <!-- <li>
         Description:
         {{ posts.content }}
-      </li>
+      </li> -->
     </ul>
     <img src="{{ cityObject.image }}" maxWidth="351px" />
   </div>
 </div>
-
-<!-- <app-info-page
-  posts="{{ cityObject.posts }}
-  message="parentMessage"
-></app-info-page> -->

@@ -6,16 +6,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./info-page.component.css'],
 })
 export class InfoPageComponent implements OnInit {
-  // @Input() posts: any;
-  // @Input() message: any;
   title: string = '';
   content: string = '';
+  author: string = '';
 
   constructor() {}
 
   ngOnInit(): void {
-    this.title = history.state.name;
+    this.title = history.state.title;
     console.log(this.title);
     this.content = history.state.content;
+    this.author = history.state.author;
   }
 }

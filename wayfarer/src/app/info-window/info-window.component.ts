@@ -36,7 +36,11 @@ export class InfoWindowComponent implements OnInit {
   goToShowPage() {
     this.router.navigate([
       '/posts',
-      { name: this.cityObject.name, content: this.cityObject.content },
+      {
+        title: this.cityObject.name,
+        content: this.cityObject.content,
+        author: this.cityObject.author,
+      },
     ]);
   }
 }
